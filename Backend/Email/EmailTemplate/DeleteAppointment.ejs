@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nouvelle Réservation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .header {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .content {
+            margin-bottom: 10px;
+        }
+        .footer {
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Annulation de rendez-vous</div>
+        <div class="content">
+            <p>Bonjour,</p>
+            <p>Votre rendez-vous pour le :</p>
+            <br>
+            <p><strong>Date :</strong> <%= date %></p>
+            <p><strong>Heure :</strong> <%= time %></p>
+            <p><strong>Motif :</strong> <%= reason %></p>
+            <br>
+            <p>a été annulé</p>
+        </div>
+        <div class="footer">
+            <p>Cordialement,</p>
+            <p>Votre équipe chargé de la gestion des rendez-vous</p>
+        </div>
+    </div>
+</body>
+</html>
